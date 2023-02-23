@@ -188,7 +188,7 @@ Primero debemos ejecutar el programa que acabamos de escribir, para ello basta c
 
 ## Paso Extra. Visualizar las posiciones GPS
 
-Se proporciona un servidor Flask que podemos utilizar para ver las posiciones de los camiones en tiempo real. Para ejecutarlo simplemente hay que ejecutar el archivo `src/visualizador/app.py` y abrir la web `http://localhost:5005`
+Se proporciona un servidor Flask que podemos utilizar para ver las posiciones de los camiones en tiempo real. Para ejecutarlo simplemente hay que ejecutar el archivo `visualizador/app.py` y abrir la web `http://localhost:5005`
 
 ## Paso Extra. Comprobar el error de las predicciones
 
