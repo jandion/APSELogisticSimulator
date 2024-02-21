@@ -12,7 +12,7 @@ services:
   osrm:
     image: ghcr.io/jandion/logisticdeliversimulator/osrm:latest 
     ports:
-      - "5000:5000"
+      - "5050:5000"
 
   # Kafka
   kafka:
