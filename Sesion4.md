@@ -142,7 +142,7 @@ elif (evento["eventType"] == "Truck started delivering"):
 ```
 
 
-## Paso 4. Hacer predicciones
+## Paso 4. Hacer predicciones (hacerlo con el microservicio si está terminado)
 
 Si el evento que estamos procesando es de inicio de un trayecto o de comienzo de una entrega, realizaremos una predicción con el modelo correspondiente.
 
@@ -193,7 +193,3 @@ Se proporciona un servidor Flask que podemos utilizar para ver las posiciones de
 ## Paso Extra. Comprobar el error de las predicciones
 
 De forma opcional, podemos intentar comprobar como de acertadas van siendo las predicciones de cada modelo. Podemos guardar las predicciones que se hagan, y cuando llegue el evento correspondiente comprobar el tiempo transcurrido y ver si coincide con lo que se predijo.
-
-## Entrega
-
-Una captura de los mensajes con las predicciones enviados a Kafka
