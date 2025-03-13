@@ -39,7 +39,23 @@ environment:
       ME_CONFIG_MONGODB_URL: mongodb://mongo:27017/
 ```
 
-# Problema 4: Con nada de lo anterior puedo ejecutar el notebook collections.ipynb
+# Problema 4: Ejecuto collections.ipynb pero no se llena la base de datos
+
+Probablemente se deba a que tienes una instalación de mongodb en tu máquina local y el contenedor de mongodb no está funcionando correctamente. Para solucionarlo, vamos a cambiar el puerto de mongodb en el archivo `docker-compose.yml` y en el archivo `collections.ipynb`.
+
+En el archivo `docker-compose.yml` cambiamos el puerto de mongodb (recuerda cambiarlo en todos los lugares donde aparezca):
+```yaml
+ports:
+  - "27018:27017"
+```
+
+En el archivo `collections.ipynb` cambiamos la URL de conexión a la base de datos:
+```python
+client = MongoClient('mongodb://localhost:27018/')
+```
+
+
+# Problema 5: Con nada de lo anterior puedo ejecutar el notebook collections.ipynb
 
 Podéis añadir lo siguiente al docker-compose para que os cree un contenedor con jupyter notebook y las librerías necesarias para ejecutar todos los notebooks de la asignatura ya preinstaladas.
 
