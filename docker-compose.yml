@@ -69,6 +69,16 @@ services:
     image: ghcr.io/jandion/logisticdeliversimulator/simulator:latest 
     ports:
       - "7500:7500"
+    environment:
+      SIMULATOR_PORT: 7500
+      ROUTE_OPTIMIZER_HOST: route_calculator
+      ROUTE_OPTIMIZER_PORT: 7501
+      OSRM_HOST: osrm
+      OSRM_PORT: 5000
+      MONGO_HOST: mongo
+      MONGO_PORT: 27017
+      KAFKA_HOST: kafka
+      KAFKA_PORT: 9092
 
   # Plan Selector UI
   planSelectorUi:

@@ -1,6 +1,5 @@
-utm==0.7.0
-pandas==1.2.3
-pymongo==3.11.3
-Faker==16.6.1
-kafka-python==2.0.2
-folium==0.12.1.post1
+pandas==2.1.4
+pymongo==4.6.1
+Faker==23.2.1
+kafka-python==2.0.6
+folium==0.16.0
